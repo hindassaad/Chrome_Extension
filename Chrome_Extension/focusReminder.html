@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Reminder</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+        }
+        #timer {
+            font-size: 3em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #countdownText {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        
+        @keyframes galaxyAnimation {
+            0% { background-color: #ff6f91; }
+            50% { background-color: #ff4b77; }
+            100% { background-color: #ff6f91; }
+        }
+        body {
+            animation: galaxyAnimation 10s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Focus on Something 20 Feet Away</h1>
+    <p id="countdownText">Take 20 seconds to focus</p>
+    <p id="timer">20:00</p> 
+    <script src="focusReminder.js"></script>
+</body>
+</html>

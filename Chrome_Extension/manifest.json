@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "20/20/20 Rule Reminder",
+    "author": "Hind Asaad",
+    "version": "1.0",
+    "description": "A Chrome extension to remind users of the 20/20/20 rule: Every 20 minutes, look at something 20 feet away for 20 seconds.",
+    "permissions": [
+        "notifications",
+        "alarms",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "focusReminder.html"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

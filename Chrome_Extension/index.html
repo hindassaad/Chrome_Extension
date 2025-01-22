@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20/20/20 Rule Reminder</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff6f91;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff5a7d;
+        }
+        #timer {
+            font-size: 2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>20/20/20 Rule Reminder</h1>
+    
+    <label for="soundSelect">Choose a sound:</label>
+    <select id="soundSelect">
+        <option value="beep">Beep</option>
+        <option value="chime">Chime</option>
+        <option value="bell">Bell</option>
+    </select>
+
+    <div>
+        <button id="startButton">Turn On</button>
+        <button id="stopButton" disabled>Turn Off</button>
+    </div>
+
+    <p id="status">Reminder is Off</p>
+    <p id="timer">20:00</p>  
+
+    <audio id="beepSound" src="audio/beep.mp3"></audio>
+    <audio id="chimeSound" src="audio/chime.mp3"></audio>
+    <audio id="bellSound" src="audio/bell.mp3"></audio>
+
+    <script src="popup.js"></script>
+</body>
+</html>
